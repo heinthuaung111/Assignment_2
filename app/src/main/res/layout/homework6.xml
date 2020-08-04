@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aaa"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:text="Monero Wallets"
+                android:textColor="#17173E"
+                android:textSize="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+            android:id="@+id/tv2"
+            android:textColor="#17173E"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/tv1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/downarrow"
+            app:layout_constraintHorizontal_bias="1"
+            android:text="Change"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"/>
+            <ImageView
+                android:id="@+id/downarrow"
+                android:src="@drawable/ic_down_arrow"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/tv2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="14dp"
+                android:layout_height="14dp"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv1"
+            app:layout_constraintTop_toBottomOf="@id/cl1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="220dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="4dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:text="Mucho Dalares"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textColor="#aa0000ff"/>
+                <TextView
+                    android:text="XMR Balance"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textColor="#00f"/>
+                <TextView
+                    android:text="24.4565"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:textColor="#000"
+                    android:textSize="24dp"/>
+                <TextView
+                    android:text="4800.24 USD"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <ru.dimorinny.floatingtextbutton.FloatingTextButton
+                    android:layout_gravity="center"
+                    android:elevation="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:floating_background_color="#DCD7D7"
+                    app:floating_left_icon="@drawable/ic_arrows"
+                    app:floating_title="SYNCING BLOCKCHAIN"
+                    app:floating_title_color="#000"/>
+                </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            >
+
+                <ru.dimorinny.floatingtextbutton.FloatingTextButton
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/receive1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:id="@+id/send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:floating_background_color="#fff"
+                    app:floating_left_icon="@drawable/ic_share1"
+                    app:floating_title="Send"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                     />
+
+                <ru.dimorinny.floatingtextbutton.FloatingTextButton
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/send"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:id="@+id/receive1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:floating_left_icon="@drawable/ic_receive"
+                    app:floating_title="Receive" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tv3"
+            app:layout_constraintTop_toBottomOf="@id/cl2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Today"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.cardview.widget.CardView
+            app:layout_constraintTop_toBottomOf="@+id/tv3"
+            android:elevation="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:id="@+id/direct"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_direct_download"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/received"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/received"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="Received"
+                    android:textColor="#000"
+                    app:layout_constraintLeft_toRightOf="@id/direct"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/xmr1"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:gravity="right"
+                    android:text="1.4545 XMR"
+                    android:textColor="#454343"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/xmr2"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="left"
+                    android:text="1.4545 XMR"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/received" />
+
+                <ImageView
+                    android:id="@+id/uparrow"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_up_arrow"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/sent1"
+                    app:layout_constraintTop_toBottomOf="@id/xmr2" />
+
+                <TextView
+                    android:id="@+id/sent1"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="Sent"
+                    android:textColor="#000"
+                    app:layout_constraintLeft_toRightOf="@id/uparrow"
+                    app:layout_constraintTop_toBottomOf="@id/xmr2" />
+
+                <TextView
+                    android:id="@+id/usd1"
+                    app:layout_constraintTop_toBottomOf="@id/xmr1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="424 USD"
+                    android:gravity="right"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    />
+                <TextView
+                    android:id="@+id/xmr3"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:gravity="right"
+                    android:text="1.4545 XMR"
+                    android:textColor="#454343"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/usd1" />
+                <TextView
+                    android:id="@+id/xmr4"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="left"
+                    android:text="1.4545 XMR"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sent1" />
+                <TextView
+                    android:id="@+id/usd2"
+                    app:layout_constraintTop_toBottomOf="@id/xmr3"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="424 USD"
+                    android:gravity="right"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    />
+                <ImageView
+                    android:id="@+id/uparrow2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_up_arrow"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/sent2"
+                    app:layout_constraintTop_toBottomOf="@id/xmr4" />
+                <TextView
+                    android:id="@+id/sent2"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="Sent"
+                    android:textColor="#000"
+                    app:layout_constraintLeft_toRightOf="@id/uparrow2"
+                    app:layout_constraintTop_toBottomOf="@id/xmr4" />
+                <TextView
+                    android:id="@+id/xmr5"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="left"
+                    android:text="1.4545 XMR"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sent2" />
+                <TextView
+                    android:id="@+id/xmr6"
+                    app:layout_constraintTop_toBottomOf="@id/usd2"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="1.4545 XMR"
+                    android:gravity="right"
+                    android:textColor="#454343"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    />
+                <ImageView
+                    android:id="@+id/uparrow3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_up_arrow"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/sent3"
+                    app:layout_constraintTop_toBottomOf="@id/xmr5" />
+                <TextView
+                    android:id="@+id/sent3"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="Sent"
+                    android:textColor="#000"
+                    app:layout_constraintLeft_toRightOf="@id/uparrow3"
+                    app:layout_constraintTop_toBottomOf="@id/xmr5" />
+                <TextView
+                    android:id="@+id/usd3"
+                    app:layout_constraintTop_toBottomOf="@id/xmr6"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="424 USD"
+                    android:gravity="right"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    />
+                <TextView
+                    android:id="@+id/xmr7"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="50dp"
+                    android:gravity="left"
+                    android:text="1.4545 XMR"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sent3" />
+                <TextView
+                    android:id="@+id/xmr8"
+                    app:layout_constraintTop_toBottomOf="@id/usd3"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="1.4545 XMR"
+                    android:gravity="right"
+                    android:textColor="#454343"
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    />
+                <TextView
+                    android:id="@+id/usd4"
+                    app:layout_constraintTop_toBottomOf="@id/xmr8"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="424 USD"
+                    android:gravity="right"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

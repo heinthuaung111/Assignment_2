@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv1"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="match_parent"
+            android:layout_height="278dp"
+            android:src="@drawable/shoe" />
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Air Mash"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:layout_marginLeft="35dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@id/cv1"
+        >
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_heart"
+            android:layout_marginLeft="120dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_upload"
+            android:layout_marginLeft="170dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv2"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        app:layout_constraintTop_toBottomOf="@id/cv"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp">
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="375dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="35dp"
+            android:textSize="16dp"
+            android:text="Jog Air Mesh Summer Sneaker Shoes Sports Slip-on Max Size 46 Athletics Shoes"
+            android:textColor="#000"/>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="330dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="50dp"
+            android:text="From Tianjin"
+            android:textColor="#aaa"/>
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="330dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="80dp"
+            android:text="Minium Order 5 Pcs"
+            android:textColor="#aaa"/>
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="120dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="120dp"
+            android:text="Ks-12,500 /Pcs"
+            android:textSize="16dp"
+            android:textColor="#DD9D3D"/>
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="120dp"
+            android:text="28 Sold"
+            android:textColor="#aaa"/>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/cv2">
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Product Options"
+            android:layout_marginLeft="35dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"/>
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Select"
+            android:layout_marginLeft="310dp"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="14dp"
+            android:src="@drawable/next"
+            android:layout_marginLeft="360dp"
+            android:layout_gravity="center_vertical"/>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/cv3"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_browser"
+            android:layout_marginLeft="35dp"
+            android:layout_gravity="center_vertical"
+            />
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_message"
+            android:layout_marginLeft="100dp"
+            android:layout_gravity="center_vertical"
+
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="ADD TO CART"
+            android:layout_marginLeft="165dp"
+            android:background="@drawable/backgroundcolor"
+            android:textColor="#E91E63"
+            android:layout_gravity="center_vertical"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="BUY NOW"
+            android:background="#DD9D3D"
+            android:textColor="#fff"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="290dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

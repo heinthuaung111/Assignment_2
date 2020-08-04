@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F4F4"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/ourteam"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="140dp"
+            android:layout_height="35dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="Our Team"
+            android:textColor="#000"
+            >
+        </TextView>
+<androidx.constraintlayout.widget.ConstraintLayout
+    app:layout_constraintTop_toBottomOf="@+id/ourteam"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="685dp"
+    android:layout_marginTop="12dp"
+    android:background="#F8F4F4">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/cardview2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/b1" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/cardView1"
+        app:layout_constraintRight_toLeftOf="@+id/cardview3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="40dp">
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/b2"
+        />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/cardview2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="40dp">
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/b2"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:text="Adams G"
+        android:textSize="12dp"
+        android:textColor="#000"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/cardView1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv2"
+        android:layout_width="80dp"
+        android:layout_height="20dp"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:text="Betty L"
+        android:textSize="12dp"
+        android:textColor="#000"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/cardview2"
+        app:layout_constraintLeft_toRightOf="@id/tv1"
+        app:layout_constraintRight_toLeftOf="@id/tv3"
+        android:layout_width="80dp"
+        android:layout_height="20dp"/>
+    <TextView
+        android:id="@+id/tv3"
+        android:text="Roberts"
+        android:textSize="12dp"
+        android:textColor="#000"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/cardview3"
+        app:layout_constraintLeft_toRightOf="@id/tv2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="80dp"
+        android:layout_height="20dp"/>
+    <TextView
+        android:id="@+id/tv4"
+        android:text="Executive Officer"
+        android:textSize="12dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv5"
+        android:layout_width="100dp"
+        android:layout_height="20dp"/>
+    <TextView
+        android:id="@+id/tv5"
+        android:text="Marketing"
+        android:textSize="12dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        app:layout_constraintLeft_toRightOf="@id/tv4"
+        app:layout_constraintRight_toLeftOf="@id/tv6"
+        android:layout_width="100dp"
+        android:layout_height="20dp"/>
+    <TextView
+        android:id="@+id/tv6"
+        android:text="Business Analyst"
+        android:textSize="12dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv3"
+        app:layout_constraintLeft_toRightOf="@id/tv5"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="100dp"
+        android:layout_height="20dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/cardView5"
+        app:layout_constraintTop_toBottomOf="@id/tv4"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/img4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/b4" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintLeft_toRightOf="@id/cardView4"
+        app:layout_constraintRight_toLeftOf="@id/cardView6"
+        app:layout_constraintTop_toBottomOf="@id/tv5"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/img5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/b7" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="40dp"
+        app:layout_constraintLeft_toRightOf="@id/cardView5"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv6"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/img6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/b6" />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/tv7"
+        android:text="Miller W"
+        android:textSize="12dp"
+        android:textColor="#000"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/cardView4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv8"
+        android:layout_width="80dp"
+        android:layout_height="20dp"/>
+    <TextView
+        android:id="@+id/tv8"
+        android:text="Kevin John"
+        android:textSize="12dp"
+        android:textColor="#000"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/cardView5"
+        app:layout_constraintLeft_toRightOf="@id/tv7"
+        app:layout_constraintRight_toLeftOf="@id/tv9"
+        android:layout_width="80dp"
+        android:layout_height="20dp"/>
+    <TextView
+        android:id="@+id/tv9"
+        android:text="Lura M"
+        android:textSize="12dp"
+        android:textColor="#000"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/cardView6"
+        app:layout_constraintLeft_toRightOf="@id/tv8"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="80dp"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:id="@+id/tv10"
+        android:text="UX  Designer"
+        android:textSize="12dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv11"
+        android:layout_width="100dp"
+        android:layout_height="20dp"/>
+    <TextView
+        android:id="@+id/tv11"
+        android:text="Web Developer"
+        android:textSize="12dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv8"
+        app:layout_constraintLeft_toRightOf="@id/tv10"
+        app:layout_constraintRight_toLeftOf="@id/tv12"
+        android:layout_width="100dp"
+        android:layout_height="20dp"/>
+    <TextView
+        android:id="@+id/tv12"
+        android:text="Mobile Dev"
+        android:textSize="12dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tv9"
+        app:layout_constraintLeft_toRightOf="@id/tv11"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="100dp"
+        android:layout_height="20dp"/>
+    <TextView
+        android:id="@+id/mission"
+        app:layout_constraintTop_toBottomOf="@id/tv11"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.07"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="Mission"
+        android:textColor="#000">
+    </TextView>
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/mission"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/aboutbaby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:textColor="#000"
+        android:text="Pumpkin butter? I overheard a mom using this pet name on her toddler the other day. I thought I’d heard them all. Used them all myself. Bunny, sweetie-pie, dumpling. Considering the incredible amount of careful consideration and hand-wringing debate parents put into choosing baby names—I bought not one, but two books of baby names when I was pregnant–it’s a little odd that so many parents rarely bother to call their kids by their given names.
+Not surprisingly, most terms of endearment are sweet foods. (Cutie pie, pumpkin pie, honey bunny). Although you’ll also hear a surprising number of savory-food-inspired names for children, like “peanut” and “potato.” We sometimes call our oldest “quinoa” (calling him a fancy grain makes more sense when you know his name is Quinn). When it comes to terms of endearment for kids and babies, clearly there’s just no limit to the possibilities."
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
